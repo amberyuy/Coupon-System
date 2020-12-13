@@ -7,7 +7,7 @@ package com.amberwang.coupon.constant;
 public class Constant {
 
     /** Kafka 消息的 Topic */
-    public static final String TOPIC = "imooc_user_coupon_op";
+    public static final String TOPIC = "amberwang_user_coupon_op";
 
     /**
      * <h2>Redis Key 前缀定义</h2>
