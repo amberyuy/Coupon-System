@@ -37,33 +37,33 @@ public class ExecuteManagerTest {
     @Test
     public void testComputeRule() throws CouponException {
 
-        // 满减优惠券结算测试
-        log.info("ManJian Coupon Executor Test");
-        SettlementInfo manjianInfo = fakeManJianCouponSettlement();
-        SettlementInfo result = manager.computeRule(manjianInfo);
-
-        log.info("{}", result.getCost());
-        log.info("{}", result.getCouponAndTemplateInfos().size());
-        log.info("{}", result.getCouponAndTemplateInfos());
-
-        // 折扣优惠券结算测试
-        log.info("ZheKou Coupon Executor Test");
-        SettlementInfo zhekouInfo = fakeZheKouCouponSettlement();
-        SettlementInfo result = manager.computeRule(zhekouInfo);
-
-        log.info("{}", result.getCost());
-        log.info("{}", result.getCouponAndTemplateInfos().size());
-        log.info("{}", result.getCouponAndTemplateInfos());
-
-        // 立减优惠券结算测试
-        log.info("LiJian Coupon Executor Test");
-        SettlementInfo lijianInfo = fakeLiJianCouponSettlement();
-
-        SettlementInfo result = manager.computeRule(lijianInfo);
-
-        log.info("{}", result.getCost());
-        log.info("{}", result.getCouponAndTemplateInfos().size());
-        log.info("{}", result.getCouponAndTemplateInfos());
+//        // 满减优惠券结算测试
+//        log.info("ManJian Coupon Executor Test");
+//        SettlementInfo manjianInfo = fakeManJianCouponSettlement();
+//        SettlementInfo result = manager.computeRule(manjianInfo);
+//
+//        log.info("{}", result.getCost());
+//        log.info("{}", result.getCouponAndTemplateInfos().size());
+//        log.info("{}", result.getCouponAndTemplateInfos());
+//
+//        // 折扣优惠券结算测试
+//        log.info("ZheKou Coupon Executor Test");
+//        SettlementInfo zhekouInfo = fakeZheKouCouponSettlement();
+//        SettlementInfo result = manager.computeRule(zhekouInfo);
+//
+//        log.info("{}", result.getCost());
+//        log.info("{}", result.getCouponAndTemplateInfos().size());
+//        log.info("{}", result.getCouponAndTemplateInfos());
+//
+//        // 立减优惠券结算测试
+//        log.info("LiJian Coupon Executor Test");
+//        SettlementInfo lijianInfo = fakeLiJianCouponSettlement();
+//
+//        SettlementInfo result = manager.computeRule(lijianInfo);
+//
+//        log.info("{}", result.getCost());
+//        log.info("{}", result.getCouponAndTemplateInfos().size());
+//        log.info("{}", result.getCouponAndTemplateInfos());
 
         // 满减折扣优惠券结算测试
         log.info("ManJian ZheKou Coupon Executor Test");
